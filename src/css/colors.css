@@ -1,0 +1,11 @@
+:root {
+    /* Cores de elementos */
+    --dark-bg: #001E38;
+    --blue-bg: #012545;
+    --icon-color-dark: #69D1A2;
+    --bg-element-green: #3FC689;
+
+    /* Cores de texto */
+    --text-dark: #F4F4F4;
+    --text-blue: #69C5DA;
+}
