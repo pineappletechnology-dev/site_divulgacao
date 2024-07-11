@@ -1,0 +1,68 @@
+.header_infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    background-color: var(--dark-bg);
+    color: var(--text-dark);
+}
+
+.div_redes_sociais{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.div_contatos{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.div_contatos div{
+    display: flex;
+    align-items: center;
+}
+
+.div_contatos div p{
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.header *{
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+
+    background-color: var(--blue-bg);
+    color: var(--text-dark);
+}
+
+.header div{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.header div p{
+    font-size: 30px;
+}
+
+.botao {
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: var(--bg-element-green);
+    transition: .2s;
+}
+
+.botao:hover {
+    background-color: var(--blue-bg);
+    box-shadow:inset 0px 0px 0px 3px var(--bg-element-green);
+}
