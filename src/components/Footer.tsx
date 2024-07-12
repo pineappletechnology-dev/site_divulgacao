@@ -18,7 +18,7 @@ export default function Footer() {
                     <div className={styles.acesso_rapido}>
                         <p className={styles.titulo}><strong>Acesso rápido</strong></p>
                         <Link href="#"><p>Home</p></Link>
-                        <Link href="#"><p>Portifólio</p></Link>
+                        <Link href="#"><p>Portfólio</p></Link>
                         <Link href="#"><p>Orçamento</p></Link>
                         <Link href="#"><p>Quem somos</p></Link>
                     </div>

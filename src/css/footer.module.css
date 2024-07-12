@@ -28,8 +28,8 @@
     align-items: center;
     gap: 25%;
     padding: 10px;
-
     background-color: #012545;
+    border-top: 1px solid var(--bg-element-stroke);
 }
 
 .footer_layout Link {

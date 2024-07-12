@@ -1,68 +1,82 @@
-.header_infos{
+.header_infos {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-
+    padding: 8px 20px;
     background-color: var(--dark-bg);
     color: var(--text-dark);
 }
 
-.div_redes_sociais{
+.div_redes_sociais {
     display: flex;
     justify-content: space-around;
     gap: 20px;
 }
 
-.div_contatos{
+.div_redes_sociais a {
+    display: flex;
+    justify-content: center;
+}
+
+.div_contatos {
     display: flex;
     justify-content: space-around;
     gap: 30px;
 }
 
-.div_contatos div{
+.div_contatos div {
     display: flex;
+    gap: 5px;
     align-items: center;
 }
 
-.div_contatos div p{
-    margin-left: 5px;
-    font-size: 20px;
+.div_contatos div p {
+    font-size: 14px;
 }
 
-.header *{
+.div_contatos div a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.menu p {
+    font-size: 16px;
+}
+
+.header * {
     text-decoration: none;
     color: var(--text-dark);
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-
     background-color: var(--blue-bg);
     color: var(--text-dark);
+    border-top: 1px solid var(--bg-element-stroke);
+    border-bottom: 1px solid var(--bg-element-stroke);
 }
 
-.header div{
+.header div {
     display: flex;
     justify-content: space-around;
     gap: 30px;
 }
 
-.header div p{
-    font-size: 30px;
-}
-
 .botao {
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 8px 20px;
     background-color: var(--bg-element-green);
-    transition: .2s;
+    font-weight: 300;
+    font-size: 16px;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .botao:hover {
     background-color: var(--blue-bg);
-    box-shadow:inset 0px 0px 0px 3px var(--bg-element-green);
+    box-shadow: inset 0px 0px 0px 3px var(--bg-element-green);
+    transform: scale(1.05);
 }
