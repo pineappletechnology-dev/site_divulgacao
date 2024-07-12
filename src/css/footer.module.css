@@ -1,28 +1,25 @@
-
-
 .footer_container {
     background-color: var(--dark-bg);
     color: var(--text-dark);
 }
 
 .footer_container * {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 100;
 }
 
 .footer_info {
-    padding: 15px;
+    padding: 8px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid var(--bg-element-stroke);
-    
 }
 
 .footer_social_media {
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 40px;
 }
 
 .footer_layout {
@@ -83,30 +80,31 @@
     text-decoration: none;
 }
 
-.footer_frase h1{
+.footer_frase h1 {
     color: var(--text-blue);
     font-size: 32px;
     font-weight: 700;
 }
-.footer_frase h1 *{
+
+.footer_frase h1 * {
     font-size: 32px;
     font-weight: 700;
 }
 
 .botao {
     border-radius: 50px;
-    padding: 20px 40px;
+    padding: 8px 20px;
     background-color: var(--bg-element-green);
-    font-size: 24px;
-    transition: .2s;
+    font-weight: 300;
+    font-size: 22px;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .botao:hover {
     background-color: var(--blue-bg);
-    box-shadow:inset 0px 0px 0px 3px var(--bg-element-green);
+    box-shadow: inset 0px 0px 0px 3px var(--bg-element-green);
+    transform: scale(1.05);
 }
-
-
 
 .line {
     border-left: 1px white solid;
