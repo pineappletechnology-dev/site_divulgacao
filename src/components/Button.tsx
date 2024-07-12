@@ -22,16 +22,16 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   
   const buttonClass = `${styles.botao} ${styles[size]} ${inter.className}`;
-  const defaultBgColor = "var(--bg-element-green)";
-  const defaultTextColor = "var(--text-dark)";
+  // const defaultBgColor = "var(--bg-element-green)";
+  // const defaultTextColor = "var(--text-dark)";
 
   const button = (
     <button
       className={buttonClass}
-      style={{
-        backgroundColor: bgColor || defaultBgColor,
-        color: textColor || defaultTextColor,
-      }}
+      // style={{
+      //   backgroundColor: bgColor || defaultBgColor,
+      //   color: textColor || defaultTextColor,
+      // }}
     >
       {text}
     </button>

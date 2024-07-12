@@ -65,18 +65,3 @@
     justify-content: space-around;
     gap: 30px;
 }
-
-.botao {
-    border-radius: 50px;
-    padding: 8px 20px;
-    background-color: var(--bg-element-green);
-    font-weight: 300;
-    font-size: 16px;
-    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
-}
-
-.botao:hover {
-    background-color: var(--blue-bg);
-    box-shadow: inset 0px 0px 0px 3px var(--bg-element-green);
-    transform: scale(1.05);
-}
