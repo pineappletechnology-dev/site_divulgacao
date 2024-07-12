@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Inter } from '@next/font/google';
+import { Inter } from 'next/font/google';
 import '../css/colors.css';
 import styles from '../css/footer.module.css';
+
+import Button from './Button';
 
 const inter = Inter({ subsets: ['latin'], weight: '300' });
 
@@ -26,7 +28,7 @@ export default function Footer() {
 
                 <div className={styles.footer_frase}>
                     <h1>• <span>Sua</span> visão, <span>nosso</span> código •</h1>
-                    <Link href="/" className={`${styles.botao} ${inter.className}`}>Fale com um especialista</Link>
+                    <Button href="/" text='Fale com um especialista' size='large' />
                 </div>
             </div>
 
