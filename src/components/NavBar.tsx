@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import styles from "../css/navbar.module.css"
+import Button from './Button'
 
 export default function NavBar() {
     return (
@@ -49,7 +50,7 @@ export default function NavBar() {
                     </Link>
                 </div>
 
-                <Link href="/" className={styles.botao}>ORÇAMENTO</Link>
+                <Button text="ORÇAMENTO" size='medium' href="/" />
 
             </div>
         </div>

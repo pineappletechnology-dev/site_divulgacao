@@ -1,8 +1,6 @@
-import Image from "next/image";
-import styles from "../css/page.module.css";
-
-import Footer from "../components/Footer"
-import NavBar from "@/components/NavBar";
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
+import Button from "../components/Button";
 
 export default function Home() {
   return (
