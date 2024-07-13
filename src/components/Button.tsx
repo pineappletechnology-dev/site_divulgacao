@@ -1,7 +1,7 @@
 // components/Button.tsx
 import Link from "next/link";
 import { Inter } from "next/font/google";
-import styles from "../css/button.module.css";
+import styles from "../css/components/button.module.css";
 
 interface ButtonProps {
   text: string;
@@ -9,29 +9,32 @@ interface ButtonProps {
   bgColor?: string;
   textColor?: string;
   href?: string;
+  variante?: boolean;
 }
 
-const inter = Inter({ subsets: ["latin"], weight: "300" });
 
-const Button: React.FC<ButtonProps> = ({
+const Button = ({
   text,
   size = "medium",
   bgColor,
   textColor,
   href,
-}) => {
-  
-  const buttonClass = `${styles.botao} ${styles[size]} ${inter.className}`;
+  variante
+}: ButtonProps) => {
+
+  const buttonMain = `${styles.button_main} ${styles[size]}`
+  const buttonClass = `${styles.botao} ${styles[size]}`;
+
   // const defaultBgColor = "var(--bg-element-green)";
   // const defaultTextColor = "var(--text-dark)";
 
   const button = (
     <button
-      className={buttonClass}
-      // style={{
-      //   backgroundColor: bgColor || defaultBgColor,
-      //   color: textColor || defaultTextColor,
-      // }}
+      className={variante ? buttonMain : buttonClass}
+    // style={{
+    //   backgroundColor: bgColor || defaultBgColor,
+    //   color: textColor || defaultTextColor,
+    // }}
     >
       {text}
     </button>

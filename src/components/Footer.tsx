@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import '../css/colors.css';
-import styles from '../css/footer.module.css';
+import styles from '../css/components/footer.module.css';
 
 import Button from './Button';
 

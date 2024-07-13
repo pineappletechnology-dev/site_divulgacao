@@ -1,0 +1,8 @@
+.circle {
+  border-radius: 100%;
+  background-color: var(--blue-circle);
+  border: 2px dashed var(--blue-border);
+  position: absolute;
+  z-index: -1;
+
+}

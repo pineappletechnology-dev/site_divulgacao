@@ -6,7 +6,6 @@
     font-size: 16px;
     transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
-
     background-color: var(--bg-element-green);
 }
 
@@ -15,16 +14,19 @@
     box-shadow: inset 0px 0px 0px 3px var(--bg-element-green);
     transform: scale(1.05);
 }
-  
+
 .small {
     padding: 5px 10px;
 }
-  
+
 .medium {
     padding: 10px 20px;
 }
-  
+
 .large {
     font-size: 22px;
 }
-  
+
+.button_main {
+    background-color: red;
+}
