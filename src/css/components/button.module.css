@@ -28,13 +28,13 @@
 }
 
 .button_main {
-    border: none;
-    border-radius: 20px;
-    padding: 15px 63px;
-    font-weight: 550;
-    font-size: 28px;
+    border: #3FC689 1.5px solid;
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-weight: 600;
+    font-size: 20px;
     transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
-    background-color: var(--bg-element-green);
+    background-color: #69D1A2;
     color: var(--blue-circle);
 }
