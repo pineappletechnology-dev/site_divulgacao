@@ -65,3 +65,9 @@
     justify-content: space-around;
     gap: 30px;
 }
+
+.nav_bar {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
