@@ -28,5 +28,13 @@
 }
 
 .button_main {
-    background-color: red;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 63px;
+    font-weight: 550;
+    font-size: 28px;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    background-color: var(--bg-element-green);
+    color: var(--blue-circle);
 }
