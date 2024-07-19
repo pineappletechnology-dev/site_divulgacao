@@ -71,3 +71,96 @@
     position: fixed;
     z-index: 999;
 }
+
+.header_mobile {
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownToggle {
+    background-color: #0070f3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdownToggle:focus {
+    outline: none;
+  }
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 1000;
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.dropdownItem {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dropdownItem:hover {
+    background-color: #f5f5f5;
+}
+
+
+/* MOBILE */
+@media only screen and (max-width: 550px) {
+
+    .header,
+    .header_infos {
+        display: none;
+    }
+
+    .header_mobile * {
+        text-decoration: none;
+        color: var(--text-dark);
+    }
+
+    .header_mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        background-color: var(--blue-bg);
+        color: var(--text-dark);
+        border-top: 1px solid var(--bg-element-stroke);
+        border-bottom: 1px solid var(--bg-element-stroke);
+    }
+
+    .img_nm_pineapple {
+        display: flex;
+        align-items: center !important;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .dropdownToggle {
+        width: 100%;
+    }
+
+    .dropdownMenu {
+        width: 100%;
+    }
+
+    .dropdownItem {
+        text-align: center;
+    }
+
+}
