@@ -1,0 +1,44 @@
+.container{
+    background-color: var(--text-dark);
+    padding: 40px 160px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.title_projetos{
+    color: var(--blue-bg);
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    padding: 30px 0;
+    border-radius: 50px;
+    color: var(--text-dark);
+    background-color: var(--blue-one);
+}
+
+.conteudo_projeto{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    gap: 10px;
+}
+
+.desc_projeto{
+    font-size: 20px;
+}
+
+.nm_projeto{
+    font-size: 24px;
+}

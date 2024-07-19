@@ -1,6 +1,7 @@
 import Circle from "@/components/Circle";
 import Button from "../components/Button";
 import styles from "../css/pages/home.module.css";
+import Projetos from "../components/Projetos";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <Button text="Vamos falar sobre seu projeto?" href="/#" variante={true} />
         </div>
       </section>
+      <Projetos />
     </main>
   );
 }
