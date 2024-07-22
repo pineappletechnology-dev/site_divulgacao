@@ -2,11 +2,14 @@
     /* Cores de elementos */
     --dark-bg: #001E38;
     --blue-bg: #012545;
+    --blue-stroke: #001426;
+    --blue-button: #001D36;
     --blue-one: #0C243B;
     --blue-circle: #192F45;
     --blue-border: #314559;
-    --icon-color-dark: #69D1A2;
+    --icon-color-dark: #69D1A2; 
     --bg-element-green: #3FC689;
+    --bg-selected-green: #192F45;
     --bg-element-stroke: #314559;
 
     /* Cores de texto */

@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ['latin'], weight: '300' });
 
 export default function Footer() {
     return (
+        <>
         <div className={styles.footer_container}>
             <div className={styles.footer_layout}>
                 <div className={styles.footer_menu}>
@@ -48,5 +49,24 @@ export default function Footer() {
                 </div>
             </div>
         </div>
+
+        <div className={styles.footer_container_mobile}>
+            <div className={styles.footer_mobile_options}>
+                <button className={styles.footer_mobile_button_especialista}>Fale com um especialista</button>
+                <button className={styles.footer_mobile_button}>Home</button>
+                <button className={styles.footer_mobile_button}>Portifólio</button>
+                <button className={styles.footer_mobile_button}>Orçamento</button>
+                <button className={styles.footer_mobile_button}>Quem Somos</button>
+                <div className={styles.footer_mobile_contatos}>
+                    <button className={styles.footer_mobile_button}><Image src="img/wpp.svg" width={40} height={40} alt='contato whatsapp' /></button>
+                    <button className={styles.footer_mobile_button}><Image src="img/insta.svg" width={40} height={40} alt='contato instagram' /></button>
+                    <button className={styles.footer_mobile_button}><Image src="img/linkedin.svg" width={40} height={40} alt='contato linkedin' /></button>
+                </div>
+            </div>
+            <div className={styles.footer_mobile_direitos}>
+                <p>&copy; Todos os direitos reservados</p>
+            </div>
+        </div>
+        </>
     );
 }
