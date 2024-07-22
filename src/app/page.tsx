@@ -1,7 +1,11 @@
+// Estilos
+import styles from "../css/pages/home.module.css";
+
+// Componentes
 import Circle from "@/components/Circle";
 import Button from "../components/Button";
-import styles from "../css/pages/home.module.css";
 import Projetos from "../components/Projetos";
+import Faq from "../components/FAQ"
 
 export default function Home() {
   return (
@@ -20,6 +24,7 @@ export default function Home() {
         </div>
       </section>
       <Projetos />
+      <Faq />
     </main>
   );
 }
