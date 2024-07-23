@@ -5,7 +5,7 @@ import styles from "../css/components/button.module.css";
 
 interface ButtonProps {
   text: string;
-  size?: "small" | "medium" | "large";
+  size?: "small" | "medium" | "large" | "dropdownBtn";
   bgColor?: string;
   textColor?: string;
   href?: string;

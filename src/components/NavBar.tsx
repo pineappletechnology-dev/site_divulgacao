@@ -99,14 +99,89 @@ export default function NavBar() {
         </Link>
 
         <div className={styles.dropdown}>
-          <button onClick={toggleDropdown} className={styles.dropdownToggle}>
-            Menu
-          </button>
+          <div onClick={toggleDropdown} className={styles.dropdownToggle}>
+            <Image
+              src={isOpen ? "/img/close.png" : "/img/dropdown.png"}
+              width={isOpen ? 20 : 30}
+              height={20}
+              alt="dropdown menu"
+            />
+          </div>
           {isOpen && (
             <ul className={styles.dropdownMenu}>
-              <li className={styles.dropdownItem}>Option 1</li>
-              <li className={styles.dropdownItem}>Option 2</li>
-              <li className={styles.dropdownItem}>Option 3</li>
+              <div className={styles.dropdownContaints}>
+                <li className={styles.dropdownItem}>
+                  <Link href="/">Home</Link>
+                </li>
+                <li className={styles.dropdownItem}>
+                  <Link href="/">Portífolio</Link>
+                </li>
+                <li className={styles.dropdownItem}>
+                  <Link href="/">Orçamento</Link>
+                </li>
+                <li className={styles.dropdownItem}>
+                  <Link href="/">Quem Somos</Link>
+                </li>
+                <div className={styles.dropdownIcons}>
+                  <li className={styles.dropdownItem}>
+                    <Link href="/">
+                      <Image
+                        src="img/wpp.svg"
+                        width={20}
+                        height={20}
+                        alt="contato whats"
+                      />
+                    </Link>
+                  </li>
+                  <li className={styles.dropdownItem}>
+                    <Link href="/">
+                      <Image
+                        src="/img/insta.svg"
+                        width={20}
+                        height={20}
+                        alt="contato instagram"
+                      />
+                    </Link>
+                  </li>
+                  <li className={styles.dropdownItem}>
+                    <Link href="/">
+                      <Image
+                        src="img/linkedin.svg"
+                        width={20}
+                        height={20}
+                        alt="contato linkedin"
+                      />
+                    </Link>
+                  </li>
+                </div>
+                <div className={styles.dropdownBtn}>
+                  <Button
+                    text="Fale com um especialista"
+                    size="dropdownBtn"
+                    href="/"
+                  />
+                </div>
+                <div className={styles.dropdownContato}>
+                  <li className={styles.dropdownContatoItens}>
+                    <Image
+                      src="img/email.svg"
+                      width={20}
+                      height={20}
+                      alt="contato email"
+                    />
+                    contao@pineappleteam.com
+                  </li>
+                  <li className={styles.dropdownContatoItens}>
+                    <Image
+                      src="img/wpp.svg"
+                      width={20}
+                      height={20}
+                      alt="contato whats"
+                    />{" "}
+                    (12) 99999-9999
+                  </li>
+                </div>
+              </div>
             </ul>
           )}
         </div>
